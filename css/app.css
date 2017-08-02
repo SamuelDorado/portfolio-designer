@@ -206,7 +206,7 @@ header {
 }
 
 nav {
-    font-size: 20px;
+    font-size: 16px;
     font-family: monstserrat-light;
     left: 0;
     width: 70%;
@@ -231,7 +231,7 @@ nav ul li {
 
 nav ul li span {
     line-height: 60px;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 nav ul a {
@@ -291,7 +291,7 @@ section {
 }
 
 .cool-phrase--container h1 {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 35px;
     color: #7C7C7C;
     font-family: monstserrat-alternates;
@@ -350,7 +350,7 @@ section {
 }
 
 .works-intro--title h2 {
-    font-size: 110px;
+    font-size: 90px;
     line-height: 110px;
     font-family: monstserrat-alternates-light;
 }
@@ -436,7 +436,7 @@ section {
     padding: 30px 30px;
     display: flex;
     flex-direction: column;
-    z-index: 200;
+    z-index: 250;
     height: auto;
 }
 
@@ -629,20 +629,6 @@ section {
     z-index: 100;
 }
 
-.about--section .ball-yellow-about--wrapper {
-    overflow: hidden;
-    width: 200px;
-    height: 150px;
-    top: 235vw;
-    left: 2%;
-}
-
-.about--section .ball-yellow {
-    background: #FFC000;
-    width: 200px;
-    height: 200px;
-}
-
 .about--section .ball-blue-about--wrapper {
     overflow: hidden;
     width: 400px;
@@ -704,18 +690,6 @@ section {
     color: #FFF;
 }
 
-.contact-us--image {
-    background: url("../assets/img/kirby_brush_paint.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 250px;
-    height: 250px;
-    margin: 0 5%;
-    border-radius: 50%;
-    border: 10px solid #FFF;
-}
-
 
 /* Footer
    ========================================================================= */
@@ -746,6 +720,22 @@ footer {
     background: -webkit-linear-gradient(top, #FFF 50%, #FFF, #FFC000, #FFC000 50%);
     width: 100%;
     justify-content: space-between;
+    position: relative;
+}
+
+.contact-me--container .ball-yellow-about--wrapper {
+    position: absolute;
+    overflow: hidden;
+    width: 200px;
+    height: 85px;
+    top: -50px;
+    left: 2%;
+    text-align: center;
+}
+
+.contact-me--container .ball-yellow {
+    background: #FFC000;
+    width: 200px;
 }
 
 .contact-me--container .contact-me-title {
@@ -755,8 +745,8 @@ footer {
 
 .contact-me--container .contact-me-title h2 {
     font-size: 30px;
-    font-weight: bold;
     line-height: 65px;
+    padding-top: 30px;
     font-family: monstserrat-alternates-extra-light;
 }
 
@@ -781,11 +771,9 @@ footer {
     position: relative;
 }
 
-.contact-me--container .contact-me-links i {
-    font-size: 40px;
-    position: absolute;
-    top: 5px;
-    left: 25px;
+.contact-me--container .contact-me-links img {
+    height: 2em;
+    margin-top: 15px;
 }
 
 .social-media--container {
@@ -856,7 +844,7 @@ footer {
     }
     nav ul li:hover a:before {
         opacity: 1;
-        width: 70%;
+        width: 100%;
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
     }
@@ -866,6 +854,9 @@ footer {
     }
     .cool-phrase--container {
         margin: 0% 15%;
+    }
+    .cool-phrase--container h1 {
+        font-size: 35px;
     }
     .image-under-cool-phrase--container {
         min-height: 665px;
@@ -1056,18 +1047,6 @@ footer {
         top: 0;
         z-index: 100;
     }
-    .about--section .ball-yellow-about--wrapper {
-        overflow: hidden;
-        width: 425px;
-        height: 225px;
-        top: 135vw;
-        left: 2%;
-    }
-    .about--section .ball-yellow {
-        background: #FFC000;
-        width: 425px;
-        height: 425px;
-    }
     .about--section .ball-blue-about--wrapper {
         overflow: hidden;
         width: 600px;
@@ -1094,9 +1073,22 @@ footer {
     }
     /*FOOTER 768px
     ========================================================================*/
+    .contact-me--container .ball-yellow-about--wrapper {
+        overflow: hidden;
+        width: 425px;
+        height: 225px;
+        left: 2%;
+        top: -158px;
+    }
+    .contact-me--container .ball-yellow {
+        background: #FFC000;
+        width: 425px;
+        height: 425px;
+    }
     .contact-me--container .contact-me-title h2 {
         font-size: 65px;
         line-height: 35px;
+        padding-top: 125px;
     }
     .contact-me--container .contact-me-links i {
         font-size: 40px;
@@ -1121,7 +1113,7 @@ footer {
     /*COOL PHRASE SECTION 1024px
  =========================================================================== */
     .cool-phrase--container {
-        width: 40%;
+        width: 50%;
     }
     .cool-phrase--section {
         padding-top: 470px;
@@ -1132,8 +1124,8 @@ footer {
         min-height: 650px;
     }
     .cool-phrase--container h1 {
-        font-size: 50px;
-        line-height: 75px;
+        font-size: 40px;
+        line-height: 50px;
     }
     .cool-phrase-author--container h2 {
         font-size: 30px;
@@ -1531,5 +1523,11 @@ footer {
         background: #FF007E;
         width: 650px;
         height: 650px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .about__skills li {
+        height: 12vw;
     }
 }
